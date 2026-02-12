@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Competitive Intelligence Brief | Comfort Ride Transportation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/light/style.css" />
+<style>
+:root {
+  --deep: #0f1923;
+  --deep-mid: #162230;
+  --deep-light: #1e2f40;
+  --teal: #2a9d8f;
+  --teal-dark: #21867a;
+  --teal-glow: rgba(42,157,143,0.15);
+  --teal-pale: #d4f1ed;
+  --sky: #3d8bca;
+  --sky-light: #64a8e0;
+  --warm: #e07a5f;
+  --warm-light: #f2cc8f;
+  --warm-pale: #fdf0d5;
+  --cream: #f5f2ec;
+  --white: #faf9f6;
+  --slate-100: #eae8e3;
+  --slate-200: #d8d4cd;
+  --slate-300: #b5b0a7;
+  --slate-400: #8a857c;
+  --slate-500: #625e57;
+  --slate-600: #3e3b36;
+  --red: #c1121f;
+  --red-pale: #fde8e9;
+  --purple: #6d28d9;
+  --purple-pale: #e8e0f5;
+  --green: #2d6a4f;
+  --green-pale: #d8f3dc;
+  --border: rgba(255,255,255,0.06);
+  --border-light: rgba(0,0,0,0.06);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--deep);background:var(--cream);line-height:1.65;font-size:15px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,h5{font-family:'Playfair Display',serif;font-weight:600;line-height:1.2}
+
+/* === NAV === */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.1rem 2.5rem;display:flex;justify-content:space-between;align-items:center;transition:all 0.4s ease}
+.nav.scrolled{background:rgba(15,25,35,0.97);backdrop-filter:blur(24px);padding:0.55rem 2.5rem;box-shadow:0 1px 40px rgba(0,0,0,0.25)}
+.nav-brand{display:flex;align-items:center;gap:0.75rem}
+.nav-brand img{height:42px;transition:height 0.4s ease}
+.nav.scrolled .nav-brand img{height:30px}
+.nav-brand-text{font-family:'Playfair Display',serif;font-size:15px;color:rgba(255,255,255,0.9);letter-spacing:-0.02em;transition:font-size 0.4s}
+.nav.scrolled .nav-brand-text{font-size:13px}
+.nav-brand-text span{color:var(--teal);font-weight:400;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;margin-left:6px;letter-spacing:0.06em;text-transform:uppercase}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;transition:all 0.3s;display:flex;align-items:center;gap:0.35rem}
+.nav-links a i{font-size:0.85rem}
+.nav-links a:hover{color:var(--teal)}
+.nav-links a.active{color:var(--teal)}
+
+/* === HERO === */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--deep);overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 40%,rgba(42,157,143,0.1) 0%,transparent 55%),radial-gradient(ellipse at 70% 60%,rgba(61,139,202,0.07) 0%,transparent 50%),radial-gradient(ellipse at 50% 100%,rgba(42,157,143,0.05) 0%,transparent 40%)}
+.hero-texture{position:absolute;inset:0;opacity:0.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero-grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(42,157,143,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(42,157,143,0.03) 1px,transparent 1px);background-size:80px 80px}
+.hero-content{position:relative;z-index:2;text-align:center;max-width:900px;padding:2rem}
+.hero-logo{margin-bottom:2rem;opacity:0;animation:fadeUp 0.8s ease forwards 0.2s}
+.hero-logo img{height:60px;filter:brightness(1.2) contrast(1.1)}
+.hero-divider{width:50px;height:2px;background:var(--teal);margin:0 auto 1.75rem;opacity:0;animation:fadeUp 0.8s ease forwards 0.3s}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.7rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--teal);margin-bottom:1.25rem;opacity:0;animation:fadeUp 0.8s ease forwards 0.4s}
+.hero-eyebrow i{font-size:0.9rem}
+.hero h1{font-size:clamp(2.4rem,5vw,4rem);color:rgba(255,255,255,0.95);margin-bottom:1.25rem;opacity:0;animation:fadeUp 0.8s ease forwards 0.5s;letter-spacing:-0.02em}
+.hero h1 em{font-style:italic;color:var(--teal)}
+.hero-sub{font-size:1.05rem;color:var(--slate-300);max-width:600px;margin:0 auto 2.5rem;font-weight:300;line-height:1.8;opacity:0;animation:fadeUp 0.8s ease forwards 0.6s}
+.hero-meta{display:flex;justify-content:center;gap:2.25rem;flex-wrap:wrap;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.06);opacity:0;animation:fadeUp 0.8s ease forwards 0.65s;font-size:13px;color:var(--slate-400)}
+.hero-meta strong{color:rgba(255,255,255,0.7);font-weight:600;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:2px}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:740px;margin:2.5rem auto 0;opacity:0;animation:fadeUp 0.8s ease forwards 0.8s}
+.hero-stat{text-align:center;padding:1.25rem 0.75rem;border:1px solid rgba(42,157,143,0.12);border-radius:14px;background:rgba(255,255,255,0.02);backdrop-filter:blur(10px);transition:all 0.3s}
+.hero-stat:hover{border-color:rgba(42,157,143,0.3);background:rgba(42,157,143,0.04)}
+.hero-stat-icon{font-size:1.2rem;color:var(--teal);margin-bottom:0.4rem}
+.hero-stat-value{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:rgba(255,255,255,0.95);line-height:1}
+.hero-stat-label{font-size:0.65rem;color:var(--slate-400);text-transform:uppercase;letter-spacing:0.06em;margin-top:0.35rem;line-height:1.3}
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);opacity:0;animation:fadeUp 0.8s ease forwards 1.2s}
+.hero-scroll-inner{display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--slate-400);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase}
+.hero-scroll-line{width:1px;height:32px;background:linear-gradient(to bottom,var(--teal),transparent);animation:scrollPulse 2s ease-in-out infinite}
+@keyframes scrollPulse{0%,100%{opacity:0.3;transform:scaleY(0.6)}50%{opacity:1;transform:scaleY(1)}}
+
+/* === SECTIONS === */
+.section{padding:5rem 2rem}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-dark{background:var(--deep);color:rgba(255,255,255,0.9)}
+.section-alt{background:var(--white)}
+.section-header{margin-bottom:2.5rem}
+.section-eyebrow{font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--teal);margin-bottom:0.6rem;display:flex;align-items:center;gap:0.5rem}
+.section-eyebrow i{font-size:0.95rem}
+.section-dark .section-eyebrow{color:var(--teal)}
+.section-number{font-family:'Playfair Display',serif;font-size:3.5rem;font-weight:700;color:var(--slate-200);line-height:1;margin-bottom:0.25rem;opacity:0.3}
+.section-dark .section-number{color:rgba(255,255,255,0.06)}
+.section-title{font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:0.6rem;letter-spacing:-0.01em}
+.section-dark .section-title{color:rgba(255,255,255,0.95)}
+.section-subtitle{font-size:0.95rem;color:var(--slate-400);max-width:620px;font-weight:300;line-height:1.75}
+.section-dark .section-subtitle{color:var(--slate-300)}
+
+/* === CALLOUT === */
+.callout{border-radius:12px;padding:1.15rem 1.4rem;margin:1.5rem 0;font-size:13.5px;line-height:1.65;border-left:4px solid var(--warm);background:var(--warm-pale);color:var(--slate-600)}
+.callout strong{color:var(--deep)}
+.callout-green{background:var(--green-pale);border-left-color:var(--green)}
+.callout-red{background:var(--red-pale);border-left-color:var(--red)}
+.callout-teal{background:rgba(42,157,143,0.08);border-left-color:var(--teal)}
+.section-dark .callout{background:rgba(42,157,143,0.08);border-left-color:var(--teal);color:var(--slate-300)}
+.section-dark .callout strong{color:rgba(255,255,255,0.9)}
+.section-dark .callout-red{background:rgba(193,18,31,0.1);border-left-color:var(--red)}
+
+/* === PERF GRID === */
+.perf-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1.75rem 0}
+.perf-card{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:14px;padding:1.5rem 1rem;text-align:center;transition:all 0.35s;opacity:0;transform:translateY(16px)}
+.perf-card.visible{opacity:1;transform:translateY(0)}
+.perf-card:hover{border-color:rgba(42,157,143,0.25);background:rgba(42,157,143,0.04);transform:translateY(-2px)}
+.perf-icon{font-size:1.3rem;color:var(--teal);margin-bottom:0.5rem}
+.perf-value{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:rgba(255,255,255,0.95);line-height:1}
+.perf-value.warn{color:var(--warm)}
+.perf-label{font-size:0.68rem;color:var(--slate-400);margin-top:0.35rem;text-transform:uppercase;letter-spacing:0.04em}
+
+/* === DATA TABLE === */
+.data-table-wrap{overflow-x:auto;margin-top:1.5rem;border:1px solid var(--border);border-radius:14px;background:rgba(255,255,255,0.02)}
+.section-alt .data-table-wrap,.section:not(.section-dark) .data-table-wrap{border-color:var(--border-light);background:white}
+.data-table{width:100%;border-collapse:collapse;font-size:13px}
+.data-table th{text-align:left;padding:0.75rem 1rem;background:rgba(255,255,255,0.03);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:0.07em;color:var(--slate-400);border-bottom:1px solid var(--border);white-space:nowrap}
+.section:not(.section-dark) .data-table th{background:var(--cream);color:var(--slate-500);border-bottom-color:var(--border-light)}
+.data-table td{padding:0.65rem 1rem;border-bottom:1px solid var(--border);color:var(--slate-300)}
+.section:not(.section-dark) .data-table td{border-bottom-color:var(--border-light);color:var(--slate-600)}
+.data-table tr:last-child td{border-bottom:none}
+.data-table tr:hover td{background:rgba(42,157,143,0.03)}
+.section:not(.section-dark) .data-table tr:hover td{background:rgba(42,157,143,0.03)}
+.highlight-row td{background:rgba(42,157,143,0.08)!important;font-weight:600;color:rgba(255,255,255,0.9)}
+.section:not(.section-dark) .highlight-row td{color:var(--green)}
+
+/* === THREAT BADGES === */
+.cc-threat{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;padding:3px 10px;border-radius:100px;white-space:nowrap}
+.threat-high{background:rgba(193,18,31,0.1);color:#e05263}
+.threat-med{background:rgba(224,122,95,0.12);color:var(--warm)}
+.threat-low{background:rgba(255,255,255,0.06);color:var(--slate-400)}
+.section:not(.section-dark) .threat-high{background:var(--red-pale);color:var(--red)}
+.section:not(.section-dark) .threat-med{background:var(--warm-pale);color:#b45309}
+.section:not(.section-dark) .threat-low{background:var(--cream);color:var(--slate-500)}
+
+/* === COMPETITOR CARDS === */
+.competitor-grid{display:grid;gap:1rem;margin-top:1.5rem}
+.competitor-card{background:rgba(255,255,255,0.025);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:all 0.35s}
+.competitor-card:hover{box-shadow:0 8px 32px rgba(0,0,0,0.15);border-color:rgba(42,157,143,0.15)}
+.cc-header{display:flex;align-items:center;justify-content:space-between;padding:1.15rem 1.5rem;cursor:pointer;user-select:none;transition:background 0.2s}
+.cc-header:hover{background:rgba(255,255,255,0.03)}
+.cc-name{font-weight:700;font-size:15px;display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.9)}
+.cc-toggle{width:28px;height:28px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:rgba(255,255,255,0.04);color:var(--teal);font-size:14px;transition:all 0.35s}
+.competitor-card.open .cc-toggle{transform:rotate(180deg);background:rgba(42,157,143,0.1)}
+.cc-body{max-height:0;overflow:hidden;transition:max-height 0.5s cubic-bezier(0.4,0,0.2,1),padding 0.4s ease;padding:0 1.5rem}
+.competitor-card.open .cc-body{max-height:2000px;padding:1.25rem 1.5rem}
+.cc-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:0.75rem;margin-bottom:1.25rem}
+.cc-stat{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;padding:0.75rem 1rem;transition:all 0.3s}
+.cc-stat:hover{border-color:rgba(42,157,143,0.2)}
+.cc-stat-label{font-size:10px;color:var(--slate-400);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:2px}
+.cc-stat-value{font-size:17px;font-weight:700;color:rgba(255,255,255,0.9)}
+.cc-stat-value.stars{color:var(--warm)}
+.cc-section-title{font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.07em;color:var(--teal);margin:1.25rem 0 0.4rem;padding-top:0.85rem;border-top:1px solid var(--border);font-family:'Plus Jakarta Sans',sans-serif}
+.cc-section-title:first-of-type{border-top:none;padding-top:0;margin-top:0}
+.cc-list{list-style:none;padding:0}
+.cc-list li{padding:0.3rem 0;padding-left:1.2rem;position:relative;font-size:13.5px;color:var(--slate-300);line-height:1.55}
+.cc-list li::before{content:'';position:absolute;left:0;top:0.6rem;width:5px;height:5px;border-radius:50%;background:var(--teal);opacity:0.5}
+.cc-list li strong{color:rgba(255,255,255,0.85)}
+
+/* === STRATEGY CARDS === */
+.strategy-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.15rem;margin-top:1.5rem}
+.strategy-card{background:white;border:1px solid var(--border-light);border-radius:14px;padding:1.75rem;position:relative;overflow:hidden;transition:all 0.35s ease;opacity:0;transform:translateY(16px)}
+.strategy-card.visible{opacity:1;transform:translateY(0)}
+.strategy-card:hover{box-shadow:0 12px 40px rgba(0,0,0,0.06);transform:translateY(-3px)}
+.strategy-card.visible:hover{transform:translateY(-3px)}
+.strategy-rank{font-family:'Playfair Display',serif;font-size:60px;font-weight:700;color:var(--slate-200);position:absolute;top:-6px;right:14px;line-height:1;opacity:0.25}
+.strategy-label{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:3px 10px;border-radius:100px;display:inline-block;margin-bottom:0.65rem}
+.label-revenue{background:var(--green-pale);color:var(--green)}
+.label-gap{background:var(--purple-pale);color:var(--purple)}
+.label-exploit{background:var(--warm-pale);color:#b45309}
+.label-contrarian{background:var(--red-pale);color:var(--red)}
+.strategy-title{font-size:1.15rem;line-height:1.3;margin-bottom:0.4rem}
+.strategy-desc{font-size:13.5px;color:var(--slate-500);line-height:1.65;margin-bottom:0.85rem}
+.strategy-meta{display:flex;gap:0.85rem;font-size:12px;flex-wrap:wrap}
+.strategy-meta-item{display:flex;align-items:center;gap:4px;color:var(--slate-400)}
+.strategy-meta-item strong{color:var(--slate-600)}
+
+/* === AGENCY SECTION === */
+.agency-section{background:var(--deep);border-radius:18px;padding:2.5rem;margin-top:1.5rem;border:1px solid var(--border)}
+.agency-section h3{font-size:1.5rem;color:rgba(255,255,255,0.95);margin-bottom:0.75rem}
+.agency-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-top:1.25rem}
+.agency-item{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:12px;padding:1.25rem;transition:all 0.3s;opacity:0;transform:translateY(12px)}
+.agency-item.visible{opacity:1;transform:translateY(0)}
+.agency-item:hover{border-color:rgba(42,157,143,0.2);background:rgba(42,157,143,0.04)}
+.agency-item-tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--teal);margin-bottom:0.4rem}
+.agency-item h4{font-size:14.5px;font-weight:700;margin-bottom:0.3rem;color:rgba(255,255,255,0.9);font-family:'Plus Jakarta Sans',sans-serif}
+.agency-item p{font-size:12.5px;color:var(--slate-400);line-height:1.6}
+.status-badge{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:700;padding:3px 10px;border-radius:100px;margin-top:0.65rem}
+.status-badge::before{content:'';width:6px;height:6px;border-radius:50%}
+.status-done{background:rgba(42,157,143,0.15);color:var(--teal)}
+.status-done::before{background:var(--teal)}
+.status-progress{background:rgba(224,122,95,0.15);color:var(--warm-light)}
+.status-progress::before{background:var(--warm-light)}
+
+/* === CLIENT SECTION === */
+.client-section{background:white;border:2px solid var(--teal);border-radius:18px;padding:2.5rem;margin-top:1.5rem}
+.client-section h3{font-size:1.5rem;color:var(--teal);margin-bottom:0.4rem}
+.client-section>p{font-size:13.5px;color:var(--slate-400);margin-bottom:1.25rem}
+.client-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+.client-action{border:1px solid var(--border-light);border-radius:12px;padding:1.25rem;transition:all 0.35s;opacity:0;transform:translateY(12px)}
+.client-action.visible{opacity:1;transform:translateY(0)}
+.client-action:hover{border-color:var(--teal);box-shadow:0 8px 28px rgba(42,157,143,0.06);transform:translateY(-2px)}
+.client-action.visible:hover{transform:translateY(-2px)}
+.client-action-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:0.65rem}
+.icon-reviews{background:var(--warm-pale)}
+.icon-social{background:#e0f2fe}
+.icon-email{background:var(--green-pale)}
+.icon-partner{background:var(--purple-pale)}
+.icon-booking{background:var(--red-pale)}
+.icon-brand{background:#fef3c7}
+.client-action h4{font-size:14.5px;font-weight:700;margin-bottom:0.3rem;font-family:'Plus Jakarta Sans',sans-serif}
+.client-action p{font-size:12.5px;color:var(--slate-500);line-height:1.55}
+.impact-bar{margin-top:0.75rem;display:flex;align-items:center;gap:8px;font-size:10.5px;font-weight:700;color:var(--slate-400)}
+.impact-fill{height:4px;border-radius:4px;background:var(--slate-200);flex:1;position:relative;overflow:hidden}
+.impact-fill::after{content:'';position:absolute;left:0;top:0;height:100%;border-radius:4px;background:var(--teal);width:0;transition:width 1.2s cubic-bezier(0.4,0,0.2,1)}
+.impact-90.animated .impact-fill::after{width:90%}
+.impact-80.animated .impact-fill::after{width:80%}
+.impact-70.animated .impact-fill::after{width:70%}
+.impact-60.animated .impact-fill::after{width:60%}
+
+/* === CITATION SECTION === */
+.citation-scorecard{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1.5rem 0}
+.citation-score-card{background:white;border:1px solid var(--border-light);border-radius:12px;padding:1.25rem;text-align:center;transition:all 0.35s;opacity:0;transform:translateY(12px)}
+.citation-score-card.visible{opacity:1;transform:translateY(0)}
+.citation-score-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.04)}
+.citation-score-card.critical{border-top:3px solid var(--red)}
+.citation-score-card.warning{border-top:3px solid var(--warm)}
+.citation-score-card.good{border-top:3px solid var(--teal)}
+.citation-score-card.missing{border-top:3px solid var(--slate-300)}
+.citation-big{font-family:'Playfair Display',serif;font-size:2.5rem;line-height:1}
+.citation-big.red{color:var(--red)}
+.citation-big.orange{color:var(--warm)}
+.citation-big.green{color:var(--teal)}
+.citation-big.gray{color:var(--slate-400)}
+.citation-label{font-size:11px;color:var(--slate-400);margin-top:0.3rem;font-weight:500}
+
+/* === STATUS INDICATORS === */
+.status-indicator{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;padding:2px 10px;border-radius:100px}
+.status-indicator::before{content:'';width:6px;height:6px;border-radius:50%}
+.status-correct{background:var(--green-pale);color:var(--green)}
+.status-correct::before{background:var(--green)}
+.status-wrong{background:var(--red-pale);color:var(--red)}
+.status-wrong::before{background:var(--red)}
+.status-inconsistent{background:var(--warm-pale);color:#b45309}
+.status-inconsistent::before{background:#b45309}
+.status-missing{background:var(--cream);color:var(--slate-500)}
+.status-missing::before{background:var(--slate-400)}
+
+/* === REVIEW HIGHLIGHTS === */
+.review-highlight{background:white;border:1px solid var(--border-light);border-left:4px solid var(--warm);border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;margin:1rem 0;transition:all 0.3s;opacity:0;transform:translateX(-12px)}
+.review-highlight.visible{opacity:1;transform:translateX(0)}
+.review-highlight:hover{box-shadow:0 6px 24px rgba(0,0,0,0.04)}
+.review-source{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--slate-400);margin-bottom:0.4rem}
+.review-quote{font-size:13.5px;color:var(--slate-600);line-height:1.6;font-style:italic}
+.review-impact{font-size:12.5px;color:var(--slate-500);margin-top:0.65rem;padding-top:0.65rem;border-top:1px solid var(--border-light)}
+
+/* === PROGRESS TRACKER === */
+.progress-tracker{display:flex;justify-content:space-between;margin:2rem 0 0;position:relative;padding:0 1rem}
+.progress-tracker::before{content:'';position:absolute;top:16px;left:calc(1rem + 16px);right:calc(1rem + 16px);height:2px;background:var(--slate-200)}
+.progress-tracker::after{content:'';position:absolute;top:16px;left:calc(1rem + 16px);height:2px;background:var(--teal);width:0;transition:width 1.5s cubic-bezier(0.4,0,0.2,1)}
+.progress-tracker.animated::after{width:25%}
+.progress-step{display:flex;flex-direction:column;align-items:center;gap:0.5rem;position:relative;z-index:1}
+.progress-dot{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;transition:all 0.5s}
+.progress-dot.active{background:var(--teal);color:white;box-shadow:0 0 0 4px rgba(42,157,143,0.15)}
+.progress-dot.pending{background:var(--slate-200);color:var(--slate-500)}
+.progress-label{font-size:11px;color:var(--slate-400);font-weight:600;white-space:nowrap}
+
+/* === FOOTER === */
+.footer{max-width:1100px;margin:0 auto;padding:3rem 2rem;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--slate-400);border-top:1px solid var(--border-light)}
+.footer-brand{font-family:'Playfair Display',serif;font-size:14px;color:var(--slate-500)}
+
+/* === ANIMATIONS === */
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity 0.6s ease,transform 0.6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* === RESPONSIVE === */
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hero h1{font-size:1.9rem}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .hero-meta{flex-direction:column;gap:0.5rem;align-items:center}
+  .perf-grid{grid-template-columns:repeat(2,1fr)}
+  .strategy-grid{grid-template-columns:1fr}
+  .client-grid{grid-template-columns:1fr}
+  .citation-scorecard{grid-template-columns:repeat(2,1fr)}
+  .section{padding:3.5rem 1.5rem}
+  .nav{padding:0.75rem 1.5rem}
+  .progress-tracker{flex-wrap:wrap;gap:1rem;justify-content:center}
+  .progress-tracker::before,.progress-tracker::after{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-brand">
+    <img src="comfort-ride-transportation.png" alt="Comfort Ride">
+  </div>
+  <div class="nav-links">
+    <a href="#landscape"><i class="ph ph-chart-line-up"></i> Landscape</a>
+    <a href="#competitors"><i class="ph ph-users-three"></i> Competitors</a>
+    <a href="#strategies"><i class="ph ph-compass"></i> Strategies</a>
+    <a href="#agency"><i class="ph ph-rocket-launch"></i> Our Plan</a>
+    <a href="#citations"><i class="ph ph-map-pin"></i> Citations</a>
+    <a href="#client-actions"><i class="ph ph-target"></i> Opportunities</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-texture"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-content">
+    <div class="hero-logo">
+      <img src="comfort-ride-transportation.png" alt="Comfort Ride Transportation">
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-eyebrow"><i class="ph ph-crosshair"></i> Competitive Intelligence Brief</div>
+    <h1>Your Market, Your Competitors,<br>and the <em>Path Forward</em></h1>
+    <p class="hero-sub">We've refined our strategy to focus where the opportunity is strongest: Seminole County and Orange County. This brief shows you exactly what your competitors are doing, where they're winning, and how we plan to close the gap together.</p>
+    <div class="hero-meta">
+      <div><strong>Prepared for</strong> Comfort Ride Transportation</div>
+      <div><strong>Prepared by</strong> REK Marketing & Design</div>
+      <div><strong>Date</strong> February 11, 2026</div>
+      <div><strong>Focus</strong> Seminole & Orange County</div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-icon"><i class="ph ph-cursor-click"></i></div>
+        <div class="hero-stat-value" data-count="6122" data-separator="true">0</div>
+        <div class="hero-stat-label">Total Clicks</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-icon"><i class="ph ph-star"></i></div>
+        <div class="hero-stat-value" data-count="83">0</div>
+        <div class="hero-stat-label">Google Reviews</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-icon"><i class="ph ph-file-text"></i></div>
+        <div class="hero-stat-value" data-count="90" data-suffix="+">0</div>
+        <div class="hero-stat-label">Blog Posts</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-icon"><i class="ph ph-map-pin"></i></div>
+        <div class="hero-stat-value" data-count="13" data-suffix="+">0</div>
+        <div class="hero-stat-label">Live Pages</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="hero-scroll-inner"><span>Scroll</span><div class="hero-scroll-line"></div></div></div>
+</section>
+
+<!-- 01: WHERE COMFORT RIDE STANDS -->
+<section class="section section-dark" id="landscape">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-number">01</div>
+      <div class="section-eyebrow"><i class="ph ph-chart-line-up"></i> Current Performance</div>
+      <h2 class="section-title">Where Comfort Ride Stands Today</h2>
+      <p class="section-subtitle">Your Search Console data shows strong foundation, real search visibility, and clear areas for growth.</p>
+    </div>
+
+    <div class="callout callout-teal reveal">
+      <strong>The good news:</strong> You're already ranking on page 1 for key Oviedo and Orlando searches. "Wheelchair transportation orlando" sits at position 2.9 and "wheelchair taxi orlando" at 2.8. These are the queries that bring paying customers. We're building on this foundation, not starting from scratch.
+    </div>
+
+    <div class="perf-grid">
+      <div class="perf-card">
+        <div class="perf-icon"><i class="ph ph-cursor-click"></i></div>
+        <div class="perf-value" data-count="6122" data-separator="true">0</div>
+        <div class="perf-label">Total Clicks (All Pages)</div>
+      </div>
+      <div class="perf-card">
+        <div class="perf-icon"><i class="ph ph-percent"></i></div>
+        <div class="perf-value warn">0.94%</div>
+        <div class="perf-label">Average CTR</div>
+      </div>
+      <div class="perf-card">
+        <div class="perf-icon"><i class="ph ph-star"></i></div>
+        <div class="perf-value" data-count="83">0</div>
+        <div class="perf-label">Google Reviews (4.3 Stars)</div>
+      </div>
+      <div class="perf-card">
+        <div class="perf-icon"><i class="ph ph-browsers"></i></div>
+        <div class="perf-value">13+</div>
+        <div class="perf-label">Live Service & Location Pages</div>
+      </div>
+    </div>
+
+    <div class="callout reveal">
+      <strong>Where the opportunity is:</strong> Your medical transportation page has 199,712 impressions but sits at position 45, too low to capture clicks. Your wheelchair taxi page has 108,388 impressions with 1,900 clicks. By focusing our efforts specifically on Seminole and Orange County searches, we're targeting the geographic areas where you're physically located and best positioned to win.
+    </div>
+
+    <h3 class="reveal" style="font-size:1.3rem;margin:2.5rem 0 0.5rem;color:rgba(255,255,255,0.9)">Top Keywords With Untapped Potential</h3>
+    <p class="reveal" style="font-size:13px;color:var(--slate-400);margin-bottom:1rem">These keywords have massive impression volume but Comfort Ride ranks too low to capture clicks. The new pages target these directly.</p>
+
+    <div class="data-table-wrap reveal">
+      <table class="data-table">
+        <thead><tr><th>Keyword</th><th>Impressions</th><th>Current Position</th><th>Clicks</th><th>Opportunity</th></tr></thead>
+        <tbody>
+          <tr><td>non emergency medical transportation</td><td>9,280</td><td>40.4</td><td>5</td><td><span class="cc-threat threat-high">Critical Gap</span></td></tr>
+          <tr><td>medical transportation services</td><td>8,394</td><td>51.7</td><td>4</td><td><span class="cc-threat threat-high">Critical Gap</span></td></tr>
+          <tr><td>medical transportation near me</td><td>6,076</td><td>52.9</td><td>1</td><td><span class="cc-threat threat-high">Critical Gap</span></td></tr>
+          <tr><td>wheelchair transport</td><td>5,483</td><td>43.1</td><td>6</td><td><span class="cc-threat threat-high">Critical Gap</span></td></tr>
+          <tr><td>wheelchair transportation</td><td>3,765</td><td>39.5</td><td>13</td><td><span class="cc-threat threat-med">Growth Target</span></td></tr>
+          <tr><td>medical transport services</td><td>3,509</td><td>31.0</td><td>25</td><td><span class="cc-threat threat-med">Growth Target</span></td></tr>
+          <tr><td>wheelchair taxi near me</td><td>2,416</td><td>39.2</td><td>17</td><td><span class="cc-threat threat-med">Growth Target</span></td></tr>
+          <tr><td>non emergency medical transportation orlando</td><td>1,697</td><td>4.5</td><td>41</td><td><span class="cc-threat threat-low">Optimize</span></td></tr>
+          <tr class="highlight-row"><td>wheelchair transportation orlando</td><td>999</td><td>2.9</td><td>51</td><td><span class="cc-threat" style="background:rgba(42,157,143,0.15);color:var(--teal);">Strong Position</span></td></tr>
+          <tr class="highlight-row"><td>wheelchair taxi orlando</td><td>396</td><td>2.8</td><td>93</td><td><span class="cc-threat" style="background:rgba(42,157,143,0.15);color:var(--teal);">Strong Position</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 02: COMPETITOR DEEP DIVE -->
+<section class="section section-dark" id="competitors" style="padding-top:0">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-number">02</div>
+      <div class="section-eyebrow"><i class="ph ph-users-three"></i> Competitive Landscape</div>
+      <h2 class="section-title">Competitor Deep Dive</h2>
+      <p class="section-subtitle">Click each competitor to expand their full strategic profile. Ordered by competitive threat level.</p>
+    </div>
+
+    <div class="competitor-grid">
+      <!-- DDJ Transport -->
+      <div class="competitor-card open reveal">
+        <div class="cc-header" onclick="toggleCompetitor(this)">
+          <div class="cc-name">DDJ Transport <span class="cc-threat threat-high">High Threat</span></div>
+          <div class="cc-toggle"><i class="ph ph-caret-down"></i></div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-stats">
+            <div class="cc-stat"><div class="cc-stat-label">Reviews</div><div class="cc-stat-value">272+</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Pages</div><div class="cc-stat-value">~25</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Location Pages</div><div class="cc-stat-value">19</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Experience</div><div class="cc-stat-value">20+ yrs</div></div>
+          </div>
+          <div class="cc-section-title">Positioning & Value Proposition</div>
+          <ul class="cc-list">
+            <li>Positions as the established, veteran-owned local transport company with 20+ years experience</li>
+            <li>Emphasizes hyperlocal city-by-city coverage across Central Florida with dedicated pages for 19 individual cities</li>
+            <li>Uses "trusted by families" messaging, leaning heavily on longevity in the market</li>
+          </ul>
+          <div class="cc-section-title">CTAs & Lead Generation</div>
+          <ul class="cc-list">
+            <li>Phone number prominently displayed on every page (sticky header)</li>
+            <li>"Call Now" and "Request a Ride" CTAs on every page</li>
+            <li>Contact form on dedicated contact page, no online booking system</li>
+            <li>No live chat, no text messaging option visible</li>
+          </ul>
+          <div class="cc-section-title">Social Proof Strategy</div>
+          <ul class="cc-list">
+            <li>272+ Google reviews is the highest in the local market, and they display testimonials prominently</li>
+            <li>Customer reviews on homepage feature specific driver names (Jose, Chris, Alex, Holiday) creating personal connection</li>
+            <li>No case studies or video testimonials</li>
+          </ul>
+          <div class="cc-section-title">Content & SEO Strategy</div>
+          <ul class="cc-list">
+            <li>19 city-specific location pages targeting individual cities rather than counties. This is the strategy to beat.</li>
+            <li>Service area hub page connects all location pages</li>
+            <li>Minimal blog content. Relies on geographic page volume for organic traffic</li>
+            <li>No visible content marketing or thought leadership efforts</li>
+          </ul>
+          <div class="cc-section-title">Key Weaknesses to Exploit</div>
+          <ul class="cc-list">
+            <li>No pricing transparency whatsoever</li>
+            <li>No online booking system (phone only creates friction)</li>
+            <li>No blog or educational content to capture informational queries</li>
+            <li>No visible Medicaid or insurance acceptance messaging</li>
+            <li>No social media presence driving traffic or building community</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Global Aid -->
+      <div class="competitor-card reveal">
+        <div class="cc-header" onclick="toggleCompetitor(this)">
+          <div class="cc-name">Global Aid Transportation <span class="cc-threat threat-high">High Threat</span></div>
+          <div class="cc-toggle"><i class="ph ph-caret-down"></i></div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-stats">
+            <div class="cc-stat"><div class="cc-stat-label">Reviews</div><div class="cc-stat-value stars">230 (4.9&#9733;)</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Founded</div><div class="cc-stat-value">2016</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Founder</div><div class="cc-stat-value">EMT</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Directories</div><div class="cc-stat-value">7+</div></div>
+          </div>
+          <div class="cc-section-title">Positioning & Value Proposition</div>
+          <ul class="cc-list">
+            <li>Founded by EMT-Paramedic Steven Jones, leverages medical credentials as trust signal</li>
+            <li>Strongest review profile in the market: 230 reviews at 4.9 stars on Birdeye</li>
+            <li>Positions as "medically credentialed" transport, not just a ride service</li>
+          </ul>
+          <div class="cc-section-title">Lead Generation Channels</div>
+          <ul class="cc-list">
+            <li>Strong directory presence across 7+ platforms (Birdeye, Yelp, Yellow Pages, Nextdoor, etc.)</li>
+            <li>Review volume drives local pack visibility, which drives phone calls</li>
+            <li>Facebook page for community engagement and social proof</li>
+          </ul>
+          <div class="cc-section-title">Key Weaknesses to Exploit</div>
+          <ul class="cc-list">
+            <li>No blog content or educational resources</li>
+            <li>Website is functional but not SEO-optimized with location pages</li>
+            <li>BBB profile exists but not accredited</li>
+            <li>Review strength is localized to Birdeye, not Google directly</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Excely -->
+      <div class="competitor-card reveal">
+        <div class="cc-header" onclick="toggleCompetitor(this)">
+          <div class="cc-name">Excely Health Medical Transport <span class="cc-threat threat-med">Medium Threat</span></div>
+          <div class="cc-toggle"><i class="ph ph-caret-down"></i></div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-stats">
+            <div class="cc-stat"><div class="cc-stat-label">Rating</div><div class="cc-stat-value stars">5.0&#9733; (29)</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Pages</div><div class="cc-stat-value">7-10</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Blog</div><div class="cc-stat-value">Active</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Location</div><div class="cc-stat-value">Altamonte</div></div>
+          </div>
+          <div class="cc-section-title">Positioning & Value Proposition</div>
+          <ul class="cc-list">
+            <li><strong>Nurse-founded and nurse-owned:</strong> This is their standout differentiator. Healthcare expertise, not just transportation.</li>
+            <li>On-time guarantee sets a performance standard competitors don't match</li>
+            <li>HIPAA compliance messaging targets healthcare system trust</li>
+            <li>"Treats clients like family" positions against corporate, impersonal operators</li>
+          </ul>
+          <div class="cc-section-title">Content & Social Strategy</div>
+          <ul class="cc-list">
+            <li>Active blog with healthcare-focused content (World Health Day posts, wellness articles)</li>
+            <li>Twitter/X account active (@EXCELYHEALTH)</li>
+            <li>Chamber of Commerce listing with perfect 5.0 rating</li>
+            <li>Only competitor producing consistent thought leadership content</li>
+          </ul>
+          <div class="cc-section-title">Key Weaknesses to Exploit</div>
+          <ul class="cc-list">
+            <li>Only 29 reviews, can't compete on volume with DDJ or Global Aid</li>
+            <li>Limited geographic page targeting</li>
+            <li>Based in Altamonte Springs, competes mostly in Seminole County overlap</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Call The Care -->
+      <div class="competitor-card reveal">
+        <div class="cc-header" onclick="toggleCompetitor(this)">
+          <div class="cc-name">Call The Care <span class="cc-threat threat-med">Medium Threat</span></div>
+          <div class="cc-toggle"><i class="ph ph-caret-down"></i></div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-stats">
+            <div class="cc-stat"><div class="cc-stat-label">Reviews</div><div class="cc-stat-value">10 (Yelp)</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Location Pages</div><div class="cc-stat-value">7+</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Pricing</div><div class="cc-stat-value">Published</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">HQ</div><div class="cc-stat-value">Hollywood, FL</div></div>
+          </div>
+          <div class="cc-section-title">Positioning & Value Proposition</div>
+          <ul class="cc-list">
+            <li><strong>Only competitor publishing pricing online</strong> (major differentiator reducing buyer friction)</li>
+            <li>Explicitly positions as "Medicaid-approved NEMT provider"</li>
+            <li>Multi-county coverage (Orange, Seminole, Osceola, Lake) with dedicated pages per market</li>
+            <li>Fleet features: GPS tracking, ADA-compliant vehicles, basic life support trained staff</li>
+          </ul>
+          <div class="cc-section-title">Lead Generation Channels</div>
+          <ul class="cc-list">
+            <li>Location-specific service pages (e.g., callthecare.com/orlando/wheelchair-transportation)</li>
+            <li>CEO profile on LinkedIn provides corporate credibility</li>
+            <li>Toll-free booking number: (855) 850-2255</li>
+          </ul>
+          <div class="cc-section-title">Key Weaknesses to Exploit</div>
+          <ul class="cc-list">
+            <li>Headquartered in Hollywood, FL (South Florida), not truly local to Central Florida</li>
+            <li>Only 10 Yelp reviews, weak social proof</li>
+            <li>No blog content, no educational resources</li>
+            <li>Not a member of the local community despite marketing to the area</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Comfort & Care -->
+      <div class="competitor-card reveal">
+        <div class="cc-header" onclick="toggleCompetitor(this)">
+          <div class="cc-name">Comfort & Care Transport LLC <span class="cc-threat threat-med">Medium Threat</span></div>
+          <div class="cc-toggle"><i class="ph ph-caret-down"></i></div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-stats">
+            <div class="cc-stat"><div class="cc-stat-label">Rating</div><div class="cc-stat-value stars">4.8&#9733; (24)</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Experience</div><div class="cc-stat-value">3+ yrs</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Pages</div><div class="cc-stat-value">3-5</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Coverage</div><div class="cc-stat-value">Wide</div></div>
+          </div>
+          <div class="cc-section-title">Positioning & Value Proposition</div>
+          <ul class="cc-list">
+            <li>Claims broadest service area extending to Tampa and Daytona corridors</li>
+            <li>CPR & First Aid trained drivers as standard, all vehicles equipped with lifts/ramps</li>
+            <li>Offers long-distance medical transportation as a specialty</li>
+            <li>Name similarity to "Comfort Ride" creates brand confusion risk</li>
+          </ul>
+          <div class="cc-section-title">Key Weaknesses to Exploit</div>
+          <ul class="cc-list">
+            <li>Only 24 reviews, 3-5 pages total, minimal web presence</li>
+            <li>No location-specific landing pages targeting counties or cities</li>
+            <li>Unclaimed Manta page and limited directory optimization</li>
+            <li>No content marketing, no social media, no blog</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TC Medical -->
+      <div class="competitor-card reveal">
+        <div class="cc-header" onclick="toggleCompetitor(this)">
+          <div class="cc-name">TC Medical Transport <span class="cc-threat threat-low">Lower Threat</span></div>
+          <div class="cc-toggle"><i class="ph ph-caret-down"></i></div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-stats">
+            <div class="cc-stat"><div class="cc-stat-label">Location</div><div class="cc-stat-value">Orlando</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">BBB</div><div class="cc-stat-value">Not Rated</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Content</div><div class="cc-stat-value">FAQ Page</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Pages</div><div class="cc-stat-value">5-8</div></div>
+          </div>
+          <div class="cc-section-title">Notable Features</div>
+          <ul class="cc-list">
+            <li>FAQ page and "Community Spotlight" section (unique in this market)</li>
+            <li>Based in Orlando at 773 S Kirkman Rd, strong local positioning</li>
+            <li>Emphasis on attentive, caring, and supportive staff</li>
+          </ul>
+          <div class="cc-section-title">Key Weaknesses</div>
+          <ul class="cc-list">
+            <li>No BBB accreditation, limited review presence</li>
+            <li>No location-specific pages or geographic SEO strategy</li>
+            <li>Minimal online footprint compared to top competitors</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Comfort Travel -->
+      <div class="competitor-card reveal">
+        <div class="cc-header" onclick="toggleCompetitor(this)">
+          <div class="cc-name">Comfort Travel NEMT <span class="cc-threat threat-low">Lower Threat</span></div>
+          <div class="cc-toggle"><i class="ph ph-caret-down"></i></div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-stats">
+            <div class="cc-stat"><div class="cc-stat-label">Rating</div><div class="cc-stat-value stars">5.0&#9733; (84)</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Hours</div><div class="cc-stat-value">24/7</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Experience</div><div class="cc-stat-value">7+ yrs</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Location</div><div class="cc-stat-value">North Port</div></div>
+          </div>
+          <div class="cc-section-title">Notable Features</div>
+          <ul class="cc-list">
+            <li>Perfect 5.0 rating across 84 reviews is remarkable social proof</li>
+            <li>Quantifies experience: "2,000+ trips, 150,000+ miles"</li>
+            <li>Family-owned positioning with emotional testimonials</li>
+          </ul>
+          <div class="cc-section-title">Why Lower Threat</div>
+          <ul class="cc-list">
+            <li>Based in North Port (Sarasota County), different service area than Comfort Ride</li>
+            <li>Primarily serves southwest Florida, not Central Florida</li>
+            <li>Can learn from their review strategy and social proof approach</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Express Wheelchair -->
+      <div class="competitor-card reveal">
+        <div class="cc-header" onclick="toggleCompetitor(this)">
+          <div class="cc-name">Express Wheelchair Transport <span class="cc-threat threat-low">Lower Threat</span></div>
+          <div class="cc-toggle"><i class="ph ph-caret-down"></i></div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-stats">
+            <div class="cc-stat"><div class="cc-stat-label">Rating</div><div class="cc-stat-value stars">4.8&#9733; (24)</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Experience</div><div class="cc-stat-value">3+ yrs</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Location</div><div class="cc-stat-value">St. Pete</div></div>
+            <div class="cc-stat"><div class="cc-stat-label">Hours</div><div class="cc-stat-value">24/7</div></div>
+          </div>
+          <div class="cc-section-title">Notable Features</div>
+          <ul class="cc-list">
+            <li>Family-owned, CPR/First Aid certified, bariatric transport available</li>
+            <li>24/7 availability is a strong selling point</li>
+            <li>LinkedIn presence and tourism directory listings (Visit St. Pete, TripAdvisor)</li>
+          </ul>
+          <div class="cc-section-title">Why Lower Threat</div>
+          <ul class="cc-list">
+            <li>Based in St. Petersburg, primarily serves Pinellas and Hillsborough counties</li>
+            <li>Not competing directly in Central Florida market</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparison Matrix -->
+    <h3 class="reveal" style="font-size:1.3rem;margin:3rem 0 0.75rem;color:rgba(255,255,255,0.9)">Competitive Comparison Matrix</h3>
+    <div class="data-table-wrap reveal">
+      <table class="data-table">
+        <thead><tr><th>Feature</th><th>Comfort Ride</th><th>DDJ</th><th>Global Aid</th><th>Excely</th><th>Call The Care</th></tr></thead>
+        <tbody>
+          <tr><td>Google Reviews</td><td>83 (4.3&#9733;)</td><td>272+ (est.)</td><td>230 (4.9&#9733;)</td><td>29 (5.0&#9733;)</td><td>10 (Yelp)</td></tr>
+          <tr><td>Location Pages</td><td>6 (new)</td><td>19</td><td>0</td><td>0</td><td>7+</td></tr>
+          <tr><td>Total Pages</td><td>13 (+ blog)</td><td>~25</td><td>~5</td><td>7-10</td><td>~15</td></tr>
+          <tr><td>Blog/Content</td><td>90+ posts</td><td>None</td><td>None</td><td>Active</td><td>None</td></tr>
+          <tr><td>Online Booking</td><td>No</td><td>No</td><td>No</td><td>Yes</td><td>No</td></tr>
+          <tr><td>Pricing Published</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
+          <tr><td>Medicaid Mention</td><td>No</td><td>No</td><td>No</td><td>Implied</td><td>Yes</td></tr>
+          <tr><td>Social Media</td><td>Limited</td><td>None</td><td>Facebook</td><td>Twitter/X</td><td>LinkedIn</td></tr>
+          <tr><td>Live Chat</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
+          <tr><td>Service Area (Focus)</td><td>Seminole + Orange</td><td>~12 cities</td><td>Orlando area</td><td>Seminole area</td><td>4 counties</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 03: STRATEGIC RECOMMENDATIONS -->
+<section class="section section-alt" id="strategies">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-number">03</div>
+      <div class="section-eyebrow"><i class="ph ph-compass"></i> Strategic Recommendations</div>
+      <h2 class="section-title">Strategic Recommendations</h2>
+      <p class="section-subtitle">Prioritized by revenue impact, with implementation details for each.</p>
+    </div>
+
+    <h3 class="reveal" style="font-size:1.15rem;margin-bottom:0.25rem;color:var(--green)">5 Strategies They're All Using That Comfort Ride Is Missing</h3>
+    <p class="reveal" style="font-size:13px;color:var(--slate-400);margin-bottom:1rem">Ranked by potential revenue impact, highest first.</p>
+
+    <div class="strategy-grid">
+      <div class="strategy-card">
+        <div class="strategy-rank">1</div>
+        <span class="strategy-label label-revenue">Revenue Impact: Very High</span>
+        <div class="strategy-title">Aggressive Review Generation at Scale</div>
+        <div class="strategy-desc">DDJ has 272+, Global Aid has 230. Comfort Ride has 83. In the local pack, review count and recency are the #1 ranking factor after proximity. Every competitor with traction has invested heavily in review volume. This single metric is likely costing Comfort Ride 2-3 positions in the map pack.</div>
+        <div class="strategy-meta">
+          <div class="strategy-meta-item"><strong>Difficulty:</strong> Easy</div>
+          <div class="strategy-meta-item"><strong>Timeline:</strong> 3-6 months</div>
+          <div class="strategy-meta-item"><strong>Owner:</strong> Client + Agency</div>
+        </div>
+      </div>
+      <div class="strategy-card">
+        <div class="strategy-rank">2</div>
+        <span class="strategy-label label-revenue">Revenue Impact: High</span>
+        <div class="strategy-title">Hyperlocal Pages for Seminole & Orange Counties</div>
+        <div class="strategy-desc">DDJ targets 19 individual cities. Call The Care has 7+ location pages. We've refined our approach to build focused, high-quality pages targeting cities within Seminole and Orange counties first, specifically Oviedo, Winter Springs, Sanford, Altamonte Springs, Orlando, Winter Park, and surrounding areas. Quality and relevance in 2 counties beats thin content across 6.</div>
+        <div class="strategy-meta">
+          <div class="strategy-meta-item"><strong>Difficulty:</strong> Medium</div>
+          <div class="strategy-meta-item"><strong>Timeline:</strong> In progress</div>
+          <div class="strategy-meta-item"><strong>Owner:</strong> REK (Agency)</div>
+        </div>
+      </div>
+      <div class="strategy-card">
+        <div class="strategy-rank">3</div>
+        <span class="strategy-label label-revenue">Revenue Impact: High</span>
+        <div class="strategy-title">Directory and Citation Dominance</div>
+        <div class="strategy-desc">Global Aid is listed on 7+ directories (Birdeye, Yelp, Yellow Pages, Nextdoor, iBegin, etc.). Every major competitor has consistent NAP data across multiple platforms. Citations boost local authority, and each directory listing is another surface area for leads to find you.</div>
+        <div class="strategy-meta">
+          <div class="strategy-meta-item"><strong>Difficulty:</strong> Easy</div>
+          <div class="strategy-meta-item"><strong>Timeline:</strong> 1-2 months</div>
+          <div class="strategy-meta-item"><strong>Owner:</strong> Agency</div>
+        </div>
+      </div>
+      <div class="strategy-card">
+        <div class="strategy-rank">4</div>
+        <span class="strategy-label label-revenue">Revenue Impact: Medium</span>
+        <div class="strategy-title">Healthcare Credential Positioning</div>
+        <div class="strategy-desc">Global Aid leads with "founded by EMT-Paramedic." Excely positions as "nurse-founded and nurse-owned." Even basic CPR/First Aid certifications are prominently displayed. Comfort Ride mentions professional drivers but doesn't lead with healthcare credentials or safety certifications as a primary trust signal.</div>
+        <div class="strategy-meta">
+          <div class="strategy-meta-item"><strong>Difficulty:</strong> Easy</div>
+          <div class="strategy-meta-item"><strong>Timeline:</strong> Immediate</div>
+          <div class="strategy-meta-item"><strong>Owner:</strong> Client + Agency</div>
+        </div>
+      </div>
+      <div class="strategy-card">
+        <div class="strategy-rank">5</div>
+        <span class="strategy-label label-revenue">Revenue Impact: Medium</span>
+        <div class="strategy-title">Sticky Header Phone Number + Multi-Channel CTAs</div>
+        <div class="strategy-desc">Every top competitor has a prominent, always-visible phone number in a sticky header. Most have multiple contact methods (phone, form, email). Comfort Ride's phone number is visible but the CTA experience could be stronger with a persistent click-to-call bar on mobile and multiple conversion paths.</div>
+        <div class="strategy-meta">
+          <div class="strategy-meta-item"><strong>Difficulty:</strong> Easy</div>
+          <div class="strategy-meta-item"><strong>Timeline:</strong> 1-2 weeks</div>
+          <div class="strategy-meta-item"><strong>Owner:</strong> Agency</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POSITIONING GAPS -->
+    <h3 class="reveal" style="font-size:1.15rem;margin:3rem 0 0.25rem;color:var(--purple)">3 Positioning Gaps Nobody Is Addressing</h3>
+    <p class="reveal" style="font-size:13px;color:var(--slate-400);margin-bottom:1rem">Market white space Comfort Ride could own.</p>
+    <div class="strategy-grid">
+      <div class="strategy-card">
+        <span class="strategy-label label-gap">Positioning Gap</span>
+        <div class="strategy-title">Seminole County "Local Expert" Positioning</div>
+        <div class="strategy-desc">No competitor specifically positions as the Seminole County wheelchair transportation expert. You're headquartered in Oviedo and already ranking well for Seminole County searches. Owning "the Seminole County specialist" positioning gives you home-court advantage. This means city-level pages for Oviedo, Winter Springs, Sanford, Casselberry, Lake Mary, Longwood, and Altamonte Springs, plus partnerships with AdventHealth and local assisted living communities.</div>
+        <div class="strategy-meta"><div class="strategy-meta-item"><strong>Revenue Potential:</strong> Very High</div><div class="strategy-meta-item"><strong>Timeline:</strong> 1-3 months</div></div>
+      </div>
+      <div class="strategy-card">
+        <span class="strategy-label label-gap">Positioning Gap</span>
+        <div class="strategy-title">Transparent Pricing Leader</div>
+        <div class="strategy-desc">Only Call The Care publishes pricing, and they're based in South Florida, not a local player. Nobody in the Central Florida market offers pricing transparency. In a market where families are stressed and searching during a medical crisis, showing approximate pricing ranges reduces friction and builds trust. Even "trips starting at $X" would differentiate.</div>
+        <div class="strategy-meta"><div class="strategy-meta-item"><strong>Revenue Potential:</strong> High</div><div class="strategy-meta-item"><strong>Timeline:</strong> Immediate</div></div>
+      </div>
+      <div class="strategy-card">
+        <span class="strategy-label label-gap">Positioning Gap</span>
+        <div class="strategy-title">Hospital Discharge Partnership Program</div>
+        <div class="strategy-desc">Nobody is publicly marketing a formal hospital partnership program. Hospitals face readmission penalties and need reliable discharge transportation. Seminole and Orange counties alone include major systems like AdventHealth (Oviedo, Winter Park, Altamonte), Orlando Health, and multiple VA facilities. A formal "Discharge Transportation Partner" program with a dedicated hospital coordinator phone line could create a direct referral pipeline without any advertising spend.</div>
+        <div class="strategy-meta"><div class="strategy-meta-item"><strong>Revenue Potential:</strong> Very High</div><div class="strategy-meta-item"><strong>Timeline:</strong> 3-6 months</div></div>
+      </div>
+    </div>
+
+    <!-- WEAKNESSES -->
+    <h3 class="reveal" style="font-size:1.15rem;margin:3rem 0 0.25rem;color:#b45309">2 Competitor Weaknesses to Exploit</h3>
+    <div class="strategy-grid" style="grid-template-columns:repeat(auto-fit,minmax(340px,1fr))">
+      <div class="strategy-card">
+        <span class="strategy-label label-exploit">Exploitable Weakness</span>
+        <div class="strategy-title">Nobody Has Real Content Marketing</div>
+        <div class="strategy-desc">Comfort Ride already has 90+ blog posts. DDJ has zero. Global Aid has zero. Excely has a few. This is Comfort Ride's biggest existing advantage. The blog content is generating impressions for hundreds of informational queries (wheelchair activities, hospital discharge tips, stretcher transport guides). The gap: this content isn't connected to the new location pages yet, and it's not being distributed on social channels. The infrastructure exists. It just needs activation.</div>
+        <div class="strategy-meta"><div class="strategy-meta-item"><strong>Difficulty:</strong> Easy (content exists)</div><div class="strategy-meta-item"><strong>Timeline:</strong> Immediate</div></div>
+      </div>
+      <div class="strategy-card">
+        <span class="strategy-label label-exploit">Exploitable Weakness</span>
+        <div class="strategy-title">Call The Care Isn't Actually Local</div>
+        <div class="strategy-desc">Call The Care is the most sophisticated competitor with Medicaid messaging and location pages, but they're headquartered in Hollywood, FL (South Florida). They're marketing to Central Florida from 230+ miles away. Comfort Ride is literally headquartered in Oviedo. "Locally owned and operated, headquartered right here in Oviedo" is a message that directly undermines Call The Care's positioning without naming them. Families trust local providers for vulnerable loved ones.</div>
+        <div class="strategy-meta"><div class="strategy-meta-item"><strong>Difficulty:</strong> Easy</div><div class="strategy-meta-item"><strong>Timeline:</strong> Immediate</div></div>
+      </div>
+    </div>
+
+    <!-- BOLD CONTRARIAN -->
+    <h3 class="reveal" style="font-size:1.15rem;margin:3rem 0 0.25rem;color:var(--red)">1 Bold Contrarian Strategy</h3>
+    <div class="strategy-card reveal" style="border:2px solid var(--red);margin-top:1rem">
+      <span class="strategy-label label-contrarian">Contrarian Play</span>
+      <div class="strategy-title">Build a "Comfort Ride Care Network" for Healthcare Providers</div>
+      <div class="strategy-desc" style="max-width:none">Everyone in this market is chasing individual consumers through Google search. That's the obvious play, and it's increasingly expensive. The contrarian move: stop trying to win patients one at a time and build a B2B referral network instead.<br><br>Create a formal "Comfort Ride Care Network" with a dedicated landing page, one-pager PDF, and outreach program targeting discharge planners, social workers, dialysis center coordinators, oncology offices, and assisted living facility directors in Seminole and Orange counties. You're local, you know these communities. Offer them a dedicated booking line, priority scheduling, and real-time ride status updates (even a simple text notification system).<br><br>The Medicaid broker pathway is the highest-volume channel in NEMT (60-80% of trips for mature operations), but it comes with 60-120 day payment delays. The contrarian twist: target private-pay referral partners (assisted living facilities, concierge medicine practices, senior living communities in Winter Springs, Lake Mary, and Winter Park) where the patient or family pays directly. Higher margin, faster payment, more loyal customer base.<br><br><strong>Why nobody's doing this:</strong> It requires in-person relationship building, not just SEO. Most NEMT operators are either tech-focused (Uber Health) or Medicaid-dependent. The middle ground of high-touch, B2B, private-pay referral networks is wide open.</div>
+      <div class="strategy-meta">
+        <div class="strategy-meta-item"><strong>Difficulty:</strong> Hard (requires sales effort)</div>
+        <div class="strategy-meta-item"><strong>Timeline:</strong> 3-6 months to build, 6-12 months to mature</div>
+        <div class="strategy-meta-item"><strong>Revenue Potential:</strong> Transformative</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04: OUR PLAN -->
+<section class="section" id="agency">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-number">04</div>
+      <div class="section-eyebrow"><i class="ph ph-rocket-launch"></i> Agency Strategy</div>
+      <h2 class="section-title">Our Refined Strategy for Comfort Ride</h2>
+      <p class="section-subtitle">We've sharpened our focus. Instead of spreading effort thin across multiple counties, we're concentrating on the two markets where you have the strongest competitive position.</p>
+    </div>
+
+    <div class="callout callout-green reveal">
+      <strong>Why Seminole + Orange counties:</strong> Your business is headquartered in Oviedo (Seminole County). You already rank on page 1 for Orlando and Oviedo wheelchair transportation searches. These are the counties where proximity, local authority, and your existing Google Business Profile give you a natural advantage. Concentrating here means every dollar and every hour of effort goes toward rankings that convert into actual phone calls and booked rides.
+    </div>
+
+    <div class="agency-section">
+      <h3>What REK Is Actively Doing</h3>
+      <p style="color:rgba(255,255,255,0.5);font-size:13px;margin-bottom:0.5rem">Every initiative is focused on driving leads in Seminole and Orange counties. Here's what's in progress and what's coming next.</p>
+      <div class="agency-grid">
+        <div class="agency-item">
+          <div class="agency-item-tag">SEO / Content</div>
+          <h4>Seminole + Orange Location Pages</h4>
+          <p>Building focused, high-quality location pages targeting cities within your core service area: Oviedo, Winter Springs, Sanford, Altamonte Springs, Orlando, Winter Park, and surrounding communities. 6 new pages are already live and indexing.</p>
+          <span class="status-badge status-progress">In Progress</span>
+        </div>
+        <div class="agency-item">
+          <div class="agency-item-tag">Technical SEO</div>
+          <h4>Schema & Technical Quick Wins</h4>
+          <p>Updating LocalBusiness and Service schema to reflect Seminole and Orange County service areas. Fixing encoding issues, title tag lengths, H1 spacing, and adding self-referencing canonical tags across all pages.</p>
+          <span class="status-badge status-progress">In Progress</span>
+        </div>
+        <div class="agency-item">
+          <div class="agency-item-tag">Content Strategy</div>
+          <h4>Blog to Lead Pipeline</h4>
+          <p>You have 90+ blog posts, the largest content library of any competitor. We're now connecting this content to your new location pages through internal linking, and directing readers toward your phone number and contact page. This content is already generating thousands of impressions.</p>
+          <span class="status-badge status-progress">In Progress</span>
+        </div>
+        <div class="agency-item">
+          <div class="agency-item-tag">SEO Strategy</div>
+          <h4>Keyword Gap Closure</h4>
+          <p>Targeting high-value Seminole + Orange keyword gaps: "non emergency medical transportation orlando" (position 4.5, already close), "wheelchair transportation oviedo," and related searches where you're within striking distance of page 1.</p>
+          <span class="status-badge status-progress">In Progress</span>
+        </div>
+        <div class="agency-item">
+          <div class="agency-item-tag">Local SEO</div>
+          <h4>Google Business Profile Optimization</h4>
+          <p>Your profile shows "Complete Info" status with 797 customer interactions. Ongoing optimization of posts, photos, Q&A, and service descriptions. Your Oviedo address gives you strong proximity signals for Seminole County searches.</p>
+          <span class="status-badge status-done">Maintained</span>
+        </div>
+        <div class="agency-item">
+          <div class="agency-item-tag">Competitive Positioning</div>
+          <h4>Messaging & CTA Enhancement</h4>
+          <p>Strengthening "locally owned in Oviedo" messaging across all pages. Adding "free estimate" mentions, ensuring clickable tel: links and consistent NAP (name, address, phone) data. This positions you directly against out-of-area competitors like Call The Care.</p>
+          <span class="status-badge status-progress">In Progress</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05: CITATIONS -->
+<section class="section section-alt" id="citations">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-number">05</div>
+      <div class="section-eyebrow"><i class="ph ph-map-pin"></i> Citation Health</div>
+      <h2 class="section-title">Citation Health & Online Reputation</h2>
+      <p class="section-subtitle">Your directory listings are the foundation of local SEO. Inconsistent data confuses Google and costs you rankings.</p>
+    </div>
+
+    <div class="callout callout-red reveal">
+      <strong>Critical fix needed:</strong> Your Apple Maps listing still shows the old Orlando address (1718 Oak Grove Chase Dr, Orlando, FL 32820). Every iPhone user asking Siri for wheelchair transportation is being pointed to an address that no longer exists for this business. This is the single highest-priority citation fix.
+    </div>
+
+    <h3 class="reveal" style="font-size:1.2rem;margin:2rem 0 0.75rem">Directory Health Scorecard</h3>
+    <p class="reveal" style="font-size:13px;color:var(--slate-500);margin-bottom:0.5rem">Across 32 directories audited, here's how Comfort Ride's listings break down.</p>
+
+    <div class="citation-scorecard">
+      <div class="citation-score-card good"><div class="citation-big green" data-count="6">0</div><div class="citation-label">Correct NAP</div></div>
+      <div class="citation-score-card critical"><div class="citation-big red" data-count="3">0</div><div class="citation-label">Wrong Data (Active)</div></div>
+      <div class="citation-score-card warning"><div class="citation-big orange" data-count="3">0</div><div class="citation-label">Name Inconsistency</div></div>
+      <div class="citation-score-card missing"><div class="citation-big gray" data-count="19">0</div><div class="citation-label">Not Listed</div></div>
+    </div>
+
+    <div class="callout callout-green reveal">
+      <strong>The standard NAP that every listing must match:</strong><br>
+      Comfort Ride Transportation &nbsp;|&nbsp; 400 Harley Ct, Oviedo, FL 32765 &nbsp;|&nbsp; (321) 804-5233
+    </div>
+
+    <h3 class="reveal" style="font-size:1.1rem;margin:2rem 0 0.75rem;color:var(--red)">Listings That Need Immediate Fixes</h3>
+    <div class="data-table-wrap reveal">
+      <table class="data-table">
+        <thead><tr><th>Directory</th><th>Status</th><th>Issue</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Apple Maps</strong></td><td><span class="status-indicator status-wrong">Wrong Address</span></td><td>Shows old address: 1718 Oak Grove Chase Dr, Orlando, FL 32820</td><td><span class="cc-threat threat-high">Critical</span></td></tr>
+          <tr><td><strong>City Squares</strong></td><td><span class="status-indicator status-wrong">Wrong Zip</span></td><td>Shows zip 32820 (Orlando) instead of 32765 (Oviedo)</td><td><span class="cc-threat threat-high">Critical</span></td></tr>
+          <tr><td><strong>Yahoo Local</strong></td><td><span class="status-indicator status-wrong">Unreadable</span></td><td>Profile data could not be verified, needs manual check</td><td><span class="cc-threat threat-high">Critical</span></td></tr>
+          <tr><td><strong>Data Axle</strong></td><td><span class="status-indicator status-inconsistent">Name + Zip</span></td><td>"Comfort Ride Transportation Inc" + zip shows 32765-8359. Data Axle feeds dozens of smaller directories, so this propagates.</td><td><span class="cc-threat threat-med">High</span></td></tr>
+          <tr><td><strong>DexKnows</strong></td><td><span class="status-indicator status-inconsistent">Name</span></td><td>Shows "Comfort Ride Transportation Inc" instead of "Comfort Ride Transportation"</td><td><span class="cc-threat threat-med">Medium</span></td></tr>
+          <tr><td><strong>Yellow Pages</strong></td><td><span class="status-indicator status-inconsistent">Name</span></td><td>Shows "Comfort Ride Transportation Inc" instead of "Comfort Ride Transportation"</td><td><span class="cc-threat threat-med">Medium</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="reveal" style="font-size:1.1rem;margin:2rem 0 0.75rem;color:var(--teal)">Clean Listings (No Action Needed)</h3>
+    <div class="data-table-wrap reveal">
+      <table class="data-table">
+        <thead><tr><th>Directory</th><th>Status</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Google Business Profile</td><td><span class="status-indicator status-correct">Correct</span></td><td>Connected and verified. Primary listing.</td></tr>
+          <tr><td>Bing Local</td><td><span class="status-indicator status-correct">Correct</span></td><td>NAP matches exactly.</td></tr>
+          <tr><td>ChamberOfCommerce USA</td><td><span class="status-indicator status-correct">Correct</span></td><td>NAP matches. Phone format slightly different but data correct.</td></tr>
+          <tr><td>HotFrog</td><td><span class="status-indicator status-correct">Correct</span></td><td>NAP matches exactly.</td></tr>
+          <tr><td>MapQuest</td><td><span class="status-indicator status-correct">Correct</span></td><td>NAP matches exactly.</td></tr>
+          <tr><td>Yelp</td><td><span class="status-indicator status-correct">Correct</span></td><td>NAP matches. Phone format different but data correct.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="reveal" style="font-size:1.1rem;margin:2rem 0 0.75rem;color:var(--slate-500)">Missing From 19 Directories</h3>
+    <p class="reveal" style="font-size:13px;color:var(--slate-500);margin-bottom:1rem">These will be addressed as part of REK's directory submission push. The standardized NAP above must be used for every submission.</p>
+    <div class="reveal" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:1.5rem">
+      <span class="status-indicator status-missing">Best of the Web</span><span class="status-indicator status-missing">Brown Book</span><span class="status-indicator status-missing">Citysearch</span><span class="status-indicator status-missing">Cortera</span><span class="status-indicator status-missing">Cybo</span><span class="status-indicator status-missing">EZlocal</span><span class="status-indicator status-missing">Foursquare</span><span class="status-indicator status-missing">Infobel</span><span class="status-indicator status-missing">InsiderPages</span><span class="status-indicator status-missing">Just Landed</span><span class="status-indicator status-missing">LocalStack</span><span class="status-indicator status-missing">Merchant Circle</span><span class="status-indicator status-missing">Neustarlocalize</span><span class="status-indicator status-missing">Show Me Local</span><span class="status-indicator status-missing">StoreBoard</span><span class="status-indicator status-missing">Superpages</span><span class="status-indicator status-missing">2 Find Local</span><span class="status-indicator status-missing">Yellow Book</span><span class="status-indicator status-missing">Yellow Bot</span>
+    </div>
+
+    <div class="callout reveal">
+      <strong>Important note on Data Axle:</strong> Data Axle (formerly Infogroup) is a major data aggregator. It feeds business data to dozens of smaller directories, search engines, and apps. The name inconsistency showing "Inc" will continue to propagate downstream until it's corrected at the source. Fix this one first, and many smaller listings will self-correct over time.
+    </div>
+
+    <!-- REPUTATION -->
+    <h3 class="reveal" style="font-size:1.2rem;margin:3rem 0 0.75rem">Online Reputation: Review Response Needed</h3>
+    <p class="reveal" style="font-size:13px;color:var(--slate-500);margin-bottom:1rem">Directory listings drive visibility, but reviews drive conversions. Caregivers searching for wheelchair transportation read reviews before calling.</p>
+
+    <div class="review-highlight">
+      <div class="review-source">Yahoo Local — Recurring Theme</div>
+      <div class="review-quote">Multiple reviewers report difficulty getting refunds for cancelled trips. One reviewer mentioned filing a BBB complaint. Another described waiting 1.5 years of calls, texts, and emails without resolution.</div>
+      <div class="review-impact"><strong>Conversion impact:</strong> A caregiver reading "never gives a refund, no matter how early you cancel" will call a competitor instead. This is a trust breaker for families making decisions about vulnerable loved ones.</div>
+    </div>
+    <div class="review-highlight">
+      <div class="review-source">Yahoo Local — Positive Pattern</div>
+      <div class="review-quote">Reviewers consistently praise timeliness. Drivers are described as on-time, professional, and getting patients to appointments early. One reviewer described booking a wheelchair transport to the airport on short notice and the driver arriving punctually.</div>
+      <div class="review-impact"><strong>Opportunity:</strong> The service quality is there. The operational strength (reliability, punctuality) is a genuine differentiator. The refund policy issue is a business operations problem bleeding into online reputation.</div>
+    </div>
+    <div class="review-highlight" style="border-left-color:var(--red)">
+      <div class="review-source">Better Business Bureau</div>
+      <div class="review-quote">Comfort Ride is listed on BBB but is not accredited, and there are complaints on file. For a business that transports vulnerable populations, an unresolved BBB profile is a conversion blocker.</div>
+      <div class="review-impact"><strong>Action needed:</strong> At minimum, respond to every BBB complaint professionally and publicly. Consider whether BBB accreditation is worth pursuing for the trust signal it provides in this industry.</div>
+    </div>
+
+    <div class="strategy-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:2rem">
+      <div class="strategy-card" style="border-top:3px solid var(--warm)">
+        <div class="strategy-title" style="font-size:1rem">Respond to Every Negative Review</div>
+        <div class="strategy-desc">Professional, empathetic responses on Yahoo Local and BBB. Even if the refund policy hasn't changed, showing you acknowledge and care about the experience changes how future prospects perceive the business. Template: acknowledge the concern, express regret for the experience, invite offline resolution.</div>
+        <div class="strategy-meta"><div class="strategy-meta-item"><strong>Owner:</strong> Comfort Ride</div><div class="strategy-meta-item"><strong>Timeline:</strong> This week</div></div>
+      </div>
+      <div class="strategy-card" style="border-top:3px solid var(--teal)">
+        <div class="strategy-title" style="font-size:1rem">Drive Positive Reviews to Yahoo & BBB</div>
+        <div class="strategy-desc">Don't just focus Google reviews. Ask satisfied customers to leave reviews on Yahoo Local and the BBB page specifically. A few positive reviews on these platforms will push negative ones down and improve the overall impression for anyone who finds these listings.</div>
+        <div class="strategy-meta"><div class="strategy-meta-item"><strong>Owner:</strong> Comfort Ride</div><div class="strategy-meta-item"><strong>Timeline:</strong> Ongoing</div></div>
+      </div>
+      <div class="strategy-card" style="border-top:3px solid var(--sky)">
+        <div class="strategy-title" style="font-size:1rem">Review the Cancellation & Refund Policy</div>
+        <div class="strategy-desc">This is a business decision, not a marketing one. But the refund complaints are a pattern, not an isolated incident. Consider whether a clearer, more flexible cancellation policy would reduce negative reviews and improve customer retention. Even published cancellation terms (24-hour notice, partial refund, etc.) set expectations and reduce disputes.</div>
+        <div class="strategy-meta"><div class="strategy-meta-item"><strong>Owner:</strong> Comfort Ride</div><div class="strategy-meta-item"><strong>Timeline:</strong> Decision needed</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06: CLIENT OPPORTUNITIES -->
+<section class="section" id="client-actions">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-number">06</div>
+      <div class="section-eyebrow"><i class="ph ph-target"></i> Growth Opportunities</div>
+      <h2 class="section-title">Opportunities for Comfort Ride</h2>
+      <p class="section-subtitle">Actions the business can take independently to accelerate growth. These complement the agency work and create compounding results.</p>
+    </div>
+
+    <div class="client-section">
+      <h3>Growth Actions for the Business</h3>
+      <p>These are things that work best when driven by the business directly. We can help set up systems and templates, but the execution and consistency need to come from Comfort Ride's team.</p>
+      <div class="client-grid">
+        <div class="client-action">
+          <div class="client-action-icon icon-reviews">&#9733;</div>
+          <h4>Systematic Review Generation</h4>
+          <p>You have 83 reviews. DDJ has 272+. Global Aid has 230. Aim for 5-10 new reviews per month. Send a follow-up text/email after every ride with a direct Google review link. Even a simple "How was your ride? Leave us a review" card handed to patients can move the needle. Recency and velocity matter as much as total count.</p>
+          <div class="impact-bar impact-90"><span>Impact</span><div class="impact-fill"></div><span>Critical</span></div>
+        </div>
+        <div class="client-action">
+          <div class="client-action-icon icon-social">&#128247;</div>
+          <h4>Social Media Presence (Facebook First)</h4>
+          <p>None of the top competitors have strong social media. This is wide-open territory. Start with Facebook (your customers' families are there). Post 2-3 times per week: vehicle photos, team spotlights, community events, testimonial screenshots, and educational tips. We can create a content calendar and templates to make this easy.</p>
+          <div class="impact-bar impact-70"><span>Impact</span><div class="impact-fill"></div><span>High</span></div>
+        </div>
+        <div class="client-action">
+          <div class="client-action-icon icon-email">&#9993;</div>
+          <h4>Email Follow-Up & Reactivation</h4>
+          <p>Build an email list from past customers and send a monthly newsletter. Include ride reminders, seasonal tips (snowbird season prep), and referral incentives. Recurring appointment reminders for dialysis and therapy patients reduce no-shows and lock in steady revenue. No competitor is doing this.</p>
+          <div class="impact-bar impact-60"><span>Impact</span><div class="impact-fill"></div><span>Medium-High</span></div>
+        </div>
+        <div class="client-action">
+          <div class="client-action-icon icon-partner">&#129309;</div>
+          <h4>Healthcare Facility Outreach</h4>
+          <p>Visit discharge planners and social workers at hospitals in Seminole and Orange counties: AdventHealth Oviedo, AdventHealth Altamonte, Orlando Health, and VA facilities. Bring business cards, a one-pager about your services, and offer a dedicated phone line for facility bookings. One strong hospital relationship can generate 10-20+ rides per week.</p>
+          <div class="impact-bar impact-90"><span>Impact</span><div class="impact-fill"></div><span>Critical</span></div>
+        </div>
+        <div class="client-action">
+          <div class="client-action-icon icon-booking">&#128197;</div>
+          <h4>Online Booking / Quote System</h4>
+          <p>Only Excely offers online booking in this market. Adding even a simple "Request a Ride" form that captures name, pickup/dropoff, date/time, and wheelchair type would reduce the friction of phone-only booking. Younger family members scheduling for elderly parents strongly prefer online forms.</p>
+          <div class="impact-bar impact-70"><span>Impact</span><div class="impact-fill"></div><span>High</span></div>
+        </div>
+        <div class="client-action">
+          <div class="client-action-icon icon-brand">&#127942;</div>
+          <h4>Collect & Display Team Credentials</h4>
+          <p>Competitors lead with "EMT-founded" and "nurse-owned." Comfort Ride should prominently display every certification: CPR, First Aid, defensive driving, HIPAA awareness, patient handling. Create a "Meet Our Team" or "Our Safety Standards" page featuring driver certifications and training. This builds trust for families making emotional decisions about vulnerable loved ones.</p>
+          <div class="impact-bar impact-60"><span>Impact</span><div class="impact-fill"></div><span>Medium-High</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07: FUTURE GROWTH -->
+<section class="section section-alt">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-number">07</div>
+      <div class="section-eyebrow"><i class="ph ph-map-trifold"></i> Future Growth</div>
+      <h2 class="section-title">Future Growth: Phase 2 Counties</h2>
+      <p class="section-subtitle">Once leads are flowing consistently from Seminole and Orange counties, these markets represent the next expansion opportunity.</p>
+    </div>
+
+    <div class="callout reveal">
+      <strong>The approach:</strong> Rather than spreading thin across 6 counties all at once, we're building a foundation in your backyard first. When Seminole and Orange are generating consistent leads, expanding into these counties becomes much more efficient because you'll have the review volume, domain authority, and content library to rank faster.
+    </div>
+
+    <div class="strategy-grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+      <div class="strategy-card" style="border-top:3px solid var(--teal)">
+        <div class="strategy-title" style="font-size:1rem">Lake County</div>
+        <div class="strategy-desc">Growing senior population, proximity to your service area. Communities like Leesburg, Clermont, and Mount Dora have underserved NEMT demand. Low competition from other providers. The blog content you already have targeting Lake County will continue building search authority in the meantime.</div>
+        <div class="strategy-meta"><div class="strategy-meta-item"><strong>Priority:</strong> High (adjacent)</div></div>
+      </div>
+      <div class="strategy-card" style="border-top:3px solid var(--warm)">
+        <div class="strategy-title" style="font-size:1rem">Sumter County (The Villages)</div>
+        <div class="strategy-desc">125,000+ residents in the largest 55+ community in the U.S. Extremely high concentration of recurring medical transport needs: dialysis, oncology, physical therapy. No competitor specifically owns "The Villages transportation expert" positioning. This is a high-value expansion target.</div>
+        <div class="strategy-meta"><div class="strategy-meta-item"><strong>Priority:</strong> High (revenue potential)</div></div>
+      </div>
+      <div class="strategy-card" style="border-top:3px solid var(--sky)">
+        <div class="strategy-title" style="font-size:1rem">Marion County</div>
+        <div class="strategy-desc">Ocala and surrounding areas have a growing retirement population. Medical facilities like AdventHealth Ocala create transport demand. Longer distance from Oviedo means scheduling efficiency matters more here.</div>
+        <div class="strategy-meta"><div class="strategy-meta-item"><strong>Priority:</strong> Medium</div></div>
+      </div>
+      <div class="strategy-card" style="border-top:3px solid var(--slate-300)">
+        <div class="strategy-title" style="font-size:1rem">Alachua County</div>
+        <div class="strategy-desc">Home to UF Health Shands, a major medical destination that draws patients from across North Central Florida. The transport demand exists, but it's the farthest county from your base. Best approached once your operational capacity supports longer routes.</div>
+        <div class="strategy-meta"><div class="strategy-meta-item"><strong>Priority:</strong> Lower (distance)</div></div>
+      </div>
+    </div>
+
+    <div class="callout callout-green reveal" style="margin-top:1.5rem">
+      <strong>What's happening now:</strong> The blog content you've already published targeting these counties continues to build search authority. When you're ready to expand, you won't be starting from zero. Those pages are indexing and accumulating impressions, so the SEO groundwork is being laid passively.
+    </div>
+  </div>
+</section>
+
+<!-- 08: ROADMAP -->
+<section class="section section-dark">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-number">08</div>
+      <div class="section-eyebrow"><i class="ph ph-path"></i> Implementation</div>
+      <h2 class="section-title">Implementation Roadmap</h2>
+      <p class="section-subtitle">A focused, phased approach. Agency work and client actions together, with clear ownership and timelines.</p>
+    </div>
+
+    <div class="progress-tracker reveal">
+      <div class="progress-step"><div class="progress-dot active">1</div><div class="progress-label">Now - 30 Days</div></div>
+      <div class="progress-step"><div class="progress-dot pending">2</div><div class="progress-label">30 - 60 Days</div></div>
+      <div class="progress-step"><div class="progress-dot pending">3</div><div class="progress-label">60 - 120 Days</div></div>
+      <div class="progress-step"><div class="progress-dot pending">4</div><div class="progress-label">When Leads Flow</div></div>
+    </div>
+
+    <div class="data-table-wrap reveal" style="margin-top:2rem">
+      <table class="data-table">
+        <thead><tr><th>Phase</th><th>Action</th><th>Owner</th><th>Difficulty</th><th>Timeline</th><th>Expected Impact</th></tr></thead>
+        <tbody>
+          <tr style="background:rgba(42,157,143,0.06)"><td rowspan="7" style="font-weight:700;vertical-align:top;color:var(--teal)">Phase 1<br><span style="font-size:10px;color:var(--slate-400)">Now - 30 Days</span></td><td>Complete Seminole + Orange County location pages</td><td>REK</td><td>Medium</td><td>2-4 weeks</td><td>+Local search visibility</td></tr>
+          <tr style="background:rgba(42,157,143,0.06)"><td>Start asking every rider for a Google review</td><td>Comfort Ride</td><td>Easy</td><td>Ongoing</td><td>+5-10 reviews/month</td></tr>
+          <tr style="background:rgba(42,157,143,0.06)"><td>Add "locally owned in Oviedo" messaging sitewide</td><td>REK</td><td>Easy</td><td>1 week</td><td>Trust differentiation</td></tr>
+          <tr style="background:rgba(42,157,143,0.06)"><td>Fix technical SEO quick wins (schema, titles, encoding)</td><td>REK</td><td>Easy</td><td>1 week</td><td>Improved crawl/index</td></tr>
+          <tr style="background:rgba(42,157,143,0.06)"><td>Fix Apple Maps old address, City Squares zip code, verify Yahoo Local</td><td>REK</td><td>Easy</td><td>1 week</td><td>Stop conflicting NAP signals</td></tr>
+          <tr style="background:rgba(42,157,143,0.06)"><td>Correct Data Axle business name ("Inc" removal)</td><td>REK</td><td>Easy</td><td>1-2 weeks</td><td>Prevent downstream propagation</td></tr>
+          <tr style="background:rgba(42,157,143,0.06)"><td>Respond to all negative Yahoo Local & BBB reviews</td><td>Comfort Ride</td><td>Easy</td><td>This week</td><td>Reputation repair</td></tr>
+          <tr><td rowspan="4" style="font-weight:700;vertical-align:top">Phase 2<br><span style="font-size:10px;color:var(--slate-400)">30 - 60 Days</span></td><td>Submit to 19 missing directories + 2000-directory push</td><td>REK</td><td>Easy</td><td>2-3 weeks</td><td>+Local authority & citations</td></tr>
+          <tr><td>Start Facebook page with 2-3 posts/week</td><td>Comfort Ride</td><td>Easy</td><td>Ongoing</td><td>Brand awareness + trust</td></tr>
+          <tr><td>Add online quote request form to website</td><td>REK</td><td>Easy</td><td>1-2 weeks</td><td>Reduced booking friction</td></tr>
+          <tr><td>Create "Safety & Credentials" page</td><td>REK + Comfort Ride</td><td>Easy</td><td>2 weeks</td><td>Trust signals</td></tr>
+          <tr style="background:rgba(224,122,95,0.06)"><td rowspan="3" style="font-weight:700;vertical-align:top;color:var(--warm)">Phase 3<br><span style="font-size:10px;color:var(--slate-400)">60 - 120 Days</span></td><td>Begin hospital and facility outreach in Seminole + Orange</td><td>Comfort Ride</td><td>Medium</td><td>Ongoing</td><td>10-20+ rides/week per partner</td></tr>
+          <tr style="background:rgba(224,122,95,0.06)"><td>Email marketing setup & first campaign</td><td>REK + Comfort Ride</td><td>Medium</td><td>3-4 weeks</td><td>Repeat customer activation</td></tr>
+          <tr style="background:rgba(224,122,95,0.06)"><td>Explore pricing transparency on website</td><td>REK + Comfort Ride</td><td>Medium</td><td>2 weeks</td><td>Conversion rate improvement</td></tr>
+          <tr style="background:rgba(255,255,255,0.02)"><td rowspan="2" style="font-weight:700;vertical-align:top">Phase 4<br><span style="font-size:10px;color:var(--slate-400)">When leads flow</span></td><td>Expand to Lake + Sumter County pages</td><td>REK</td><td>Medium</td><td>4-6 weeks</td><td>New market expansion</td></tr>
+          <tr style="background:rgba(255,255,255,0.02)"><td>Expand to Marion + Alachua County pages</td><td>REK</td><td>Medium</td><td>4-6 weeks</td><td>Full service area coverage</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout reveal" style="margin-top:1.5rem">
+      <strong>The goal is measurable results.</strong> We want to see lead volume increasing from Seminole and Orange County searches before expanding scope. This focused approach means every improvement compounds in the same geographic area, building the kind of local authority that Google rewards with higher rankings and more map pack visibility.
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand">REK Marketing & Design</div>
+  <div>Prepared February 2026 | Confidential</div>
+</footer>
+
+<script>
+// NAV SCROLL
+const nav = document.getElementById('nav');
+let activeLink = null;
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+  // Active nav link
+  const sections = document.querySelectorAll('section[id]');
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 200) current = s.id; });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+}, { passive: true });
+
+// SMOOTH SCROLL
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+// ANIMATED COUNTERS
+function animateCounter(el) {
+  const target = parseInt(el.dataset.count);
+  if (!target || el.dataset.animated) return;
+  el.dataset.animated = 'true';
+  const suffix = el.dataset.suffix || '';
+  const sep = el.dataset.separator === 'true';
+  const duration = 1800;
+  const start = performance.now();
+  const update = (t) => {
+    const p = Math.min((t - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    const current = Math.round(target * eased);
+    el.textContent = (sep ? current.toLocaleString() : current) + suffix;
+    if (p < 1) requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+}
+
+// SCROLL REVEAL + COUNTER TRIGGER
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      const delay = e.target.dataset.delay || 0;
+      setTimeout(() => e.target.classList.add('visible'), delay);
+      // Trigger counters inside
+      e.target.querySelectorAll('[data-count]').forEach(c => animateCounter(c));
+      // Trigger impact bar animations
+      e.target.querySelectorAll('.impact-bar').forEach(b => b.classList.add('animated'));
+      // Trigger progress tracker
+      if (e.target.classList.contains('progress-tracker')) e.target.classList.add('animated');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
+// Observe all reveal elements with stagger
+document.querySelectorAll('.reveal, .perf-card, .strategy-card, .agency-item, .client-action, .citation-score-card, .review-highlight, .progress-tracker').forEach((el, i) => {
+  const parent = el.closest('.strategy-grid, .perf-grid, .agency-grid, .client-grid, .citation-scorecard');
+  if (parent) {
+    const siblings = Array.from(parent.children);
+    el.dataset.delay = siblings.indexOf(el) * 100;
+  }
+  revealObs.observe(el);
+});
+
+// Hero counters
+setTimeout(() => {
+  document.querySelectorAll('.hero-stat-value[data-count]').forEach(c => animateCounter(c));
+}, 1200);
+
+// COMPETITOR TOGGLE
+function toggleCompetitor(header) {
+  const card = header.parentElement;
+  const body = card.querySelector('.cc-body');
+  if (card.classList.contains('open')) {
+    body.style.maxHeight = body.scrollHeight + 'px';
+    requestAnimationFrame(() => { body.style.maxHeight = '0'; body.style.padding = '0 1.5rem'; });
+    card.classList.remove('open');
+  } else {
+    card.classList.add('open');
+    body.style.maxHeight = body.scrollHeight + 'px';
+    body.style.padding = '1.25rem 1.5rem';
+    setTimeout(() => { body.style.maxHeight = '2000px'; }, 500);
+  }
+}
+
+// Initialize open cards
+document.querySelectorAll('.competitor-card.open .cc-body').forEach(b => {
+  b.style.maxHeight = '2000px';
+  b.style.padding = '1.25rem 1.5rem';
+});
+
+// STRATEGY CARD TILT
+document.querySelectorAll('.strategy-card').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const rX = (y - rect.height / 2) / 40;
+    const rY = (rect.width / 2 - x) / 40;
+    card.style.transform = 'perspective(1000px) rotateX(' + rX + 'deg) rotateY(' + rY + 'deg) translateY(-3px)';
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
+</script>
+</body>
+</html>
